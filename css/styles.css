@@ -10,8 +10,9 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;}
-*{
+  box-sizing: border-box;
+}
+* {
   margin: 0;
   padding: 0;
 }
@@ -21,36 +22,39 @@ h2,
 h3 {
   font-family: "Roboto", sans-serif;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-img{
- display: block;
+img {
+  display: block;
 }
 
-body{
+body {
   font-family: "Roboto", "sans-serif";
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  color: var(--slate);	
+  color: var(--slate);
 }
 
-.container{
+.container {
   width: 1158px;
   margin: 0 auto;
-  padding: 0 15px
+  padding: 0 15px;
 }
 
 .header-one {
-  border: 1px solid #e7e9fc;;
+  border: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container-header {
   display: flex;
@@ -67,7 +71,7 @@ body{
   align-items: center;
 }
 .logo {
-  font-family: "Raleway", serif;;
+  font-family: "Raleway", serif;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.03em;
@@ -88,28 +92,33 @@ body{
   font-weight: 500;
   padding: 24px 0;
 }
-.page-one:hover, .page-one:focus, .page-one:active{
+.page-one:hover,
+.page-one:focus,
+.page-one:active {
   color: var(--iris);
 }
 
 .active {
   position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.active::after{
-  content: '';
+.active::after {
+  content: "";
   position: absolute;
   bottom: 0px;
   left: 0px;
+  bottom: -1px;
   width: 100%;
   height: 4px;
   background-color: #404bbf;
   transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
+  color: #404bbf;
 }
-.active:hover::after{
+.active:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
@@ -120,10 +129,15 @@ body{
   padding-left: 320px;
 }
 .add-ul {
- display:flex;
- gap: 40px; 
+  display: flex;
+  gap: 40px;
 }
-.add-li a:hover, .add-li a:focus, .add-li a:active{
+.add-li a:{
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.add-li a:hover,
+.add-li a:focus,
+.add-li a:active {
   color: var(--iris);
 }
 
@@ -131,7 +145,11 @@ body{
   background-color: var(--navy-blue);
   padding: 188px 0;
   text-align: center;
-  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/offıce.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/offıce.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -144,7 +162,7 @@ body{
   justify-content: center;
   height: 112px;
   margin-bottom: 8px;
- }
+}
 .main-hero {
   font-weight: bold;
   font-size: 56px;
@@ -155,22 +173,24 @@ body{
   max-width: 496px;
 }
 .button-one {
-  border:none;
-    border-radius: 4px;
-    min-width: 169px;
-    height: 56px;
-    background-color: var(--iris);    
-    color: var(--white);
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: inherit;
-    letter-spacing: 0.04em;
-    display:block;
-    margin:0 auto;
+  border: none;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  background-color: var(--iris);
+  color: var(--white);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: inherit;
+  letter-spacing: 0.04em;
+  display: block;
+  margin: 0 auto;
 }
-.button-one:focus, .button-one:hover, .button-one:active{
+.button-one:focus,
+.button-one:hover,
+.button-one:active {
   background-color: var(--ocean);
 }
 
@@ -205,7 +225,7 @@ body{
 .second-sec {
   background-color: var(--cloud);
   text-align: center;
-  padding: 120px 0; 
+  padding: 120px 0;
 }
 .our-one {
   font-weight: bold;
@@ -221,7 +241,7 @@ body{
 .team-list {
   background-color: var(--white);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  border-radius: 0px 0px 4px 4px 
+  border-radius: 0px 0px 4px 4px;
 }
 .team-one {
   padding: 32px 0;
@@ -259,24 +279,24 @@ body{
   background-color: #4d5ae5;
 }
 
-.icon-instagram-2:hover  {
-  background-color:#404bbf;
+.icon-instagram-2:hover {
+  background-color: #404bbf;
 }
 
 .icon-instagram-2:focus {
-  background-color:#404bbf;
+  fill: #404bbf;
 }
 
 .third-sec {
   text-align: center;
-  padding: 120px 0; 
+  padding: 120px 0;
 }
 .our-two {
   font-weight: bold;
-    font-size: 36px;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
-    margin-bottom: 72px; 
+  font-size: 36px;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 
 .our-ul {
@@ -292,16 +312,16 @@ body{
   border-left: 1px solid var(--cornflower);
   border-right: 1px solid var(--cornflower);
   text-align: left;
-  padding: 32px 16px;  
+  padding: 32px 16px;
 }
 
 .our-list .our-porth {
   margin-bottom: 8px;
-    color: var(--navy-blue);
-    font-weight: 500;
-    font-size: 20px;
-    letter-spacing: 0.02em; 
-} 
+  color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
 
 .box {
   position: relative;
@@ -342,28 +362,26 @@ body{
 .footer {
   background-color: var(--navy-blue);
   padding: 100px 0;
-  
 }
-
 
 .footer-logo {
-  font-family: 'Raleway', serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--cloud);
-    display: inline-block;
-    margin-bottom: 16px;
+  font-family: "Raleway", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--cloud);
+  display: inline-block;
+  margin-bottom: 16px;
 }
-.footer .logo-color{
+.footer .logo-color {
   color: var(--iris);
   font: inherit;
 }
 .footer-p {
   color: var(--cloud);
-    max-width: 264px;
+  max-width: 264px;
 }
 
-.footer .container{
+.footer .container {
   display: flex;
 }
 
@@ -371,7 +389,6 @@ body{
   width: 208px;
   height: 80px;
   padding-left: 120px;
-  
 }
 .social-p {
   width: 96px;
@@ -383,7 +400,7 @@ body{
   color: #ffff;
 }
 
-.social-link{
+.social-link {
   width: 208px;
   height: 40px;
   display: flex;
@@ -392,14 +409,14 @@ body{
   border-radius: 50%;
 }
 
-.icon-social{
+.icon-social {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #4d5ae5;
 }
 .icon-social:hover {
-  background-color:#404bbf;
+  background-color: #404bbf;
 }
 .icon-social:focus {
-  background-color:#404bbf;
+  background-color: #404bbf;
 }
