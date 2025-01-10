@@ -157,12 +157,13 @@ body {
 }
 .icon {
   display: flex;
-  text-align: center;
   background-color: #f4f4fd;
   border-radius: 4px;
   justify-content: center;
   height: 112px;
   margin-bottom: 8px;
+  align-items: center;
+  border: 1px solid #8e8f99
 }
 .main-hero {
   font-weight: bold;
@@ -199,11 +200,7 @@ body {
 .first-sec {
   padding: 120px 0;
 }
-.first-sec  .container{
-  display: flex;
-  align-items: center;
-  border: 1px solid #8e8f99;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
