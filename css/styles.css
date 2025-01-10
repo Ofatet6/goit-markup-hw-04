@@ -163,7 +163,7 @@ body {
   height: 112px;
   margin-bottom: 8px;
   align-items: center;
-  border: 1px solid #8e8f99
+  border: 1px solid #8e8f99;
 }
 .main-hero {
   font-weight: bold;
@@ -189,7 +189,7 @@ body {
   letter-spacing: 0.04em;
   display: block;
   margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-one:focus,
 .button-one:hover,
@@ -243,7 +243,8 @@ body {
 }
 .team-list {
   background-color: var(--white);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 .team-one {
