@@ -133,7 +133,7 @@ body {
   gap: 40px;
 }
 .address-one .add-ul .add-li a {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .add-li a:hover,
 .add-li a:focus,
@@ -153,6 +153,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 1440px;
 }
 .icon {
   display: flex;
@@ -187,6 +188,7 @@ body {
   letter-spacing: 0.04em;
   display: block;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .button-one:focus,
 .button-one:hover,
@@ -213,6 +215,8 @@ body {
 
 .first-ul {
   display: flex;
+  align-items: center;
+  border: 1px solid #8d8f99;
   gap: 24px;
   margin: 120px 0;
 }
