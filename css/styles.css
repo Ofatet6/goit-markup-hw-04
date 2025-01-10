@@ -101,6 +101,7 @@ body {
 .active {
   position: relative;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
 }
 
 .active::after {
@@ -132,7 +133,7 @@ body {
   display: flex;
   gap: 40px;
 }
-.add-li a:{
+.address-one .add-ul .add-li a {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .add-li a:hover,
