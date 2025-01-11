@@ -271,7 +271,10 @@ body {
   margin: 8px auto;
   justify-content: center;
 }
-
+.social-li {
+  width: 40px;
+  height: 40px;
+}
 .social-med {
   border-radius: 50%;
   width: 100%;
@@ -392,6 +395,7 @@ body {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 
@@ -449,3 +453,6 @@ body {
   background-color: #4d5ae5;
   fill: #f4f4fd;}
 
+.webs {
+  margin-right: 120px;
+}
